@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "GothamBold";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/GothamBold/GothamBold.eot");
+  src: local("GothamBold"), url("../fonts/GothamBold/GothamBold.woff2") format("woff2"), url("../fonts/GothamBold/GothamBold.woff") format("woff"), url("../fonts/GothamBold/GothamBold.ttf") format("truetype"), url("../fonts/GothamBold/GothamBold.svg#GothamBold") format("svg");
+}
+@font-face {
+  font-family: "GothamBlack";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/GothamBlack/GothamBlack.eot");
+  src: local("GothamBlack"), url("../fonts/GothamBlack/GothamBlack.woff2") format("woff2"), url("../fonts/GothamBlack/GothamBlack.woff") format("woff"), url("../fonts/GothamBlack/GothamBlack.ttf") format("truetype"), url("../fonts/GothamBlack/GothamBlack.svg#GothamBlack") format("svg");
+}
+@font-face {
+  font-family: "GothamBookItalic";
+  font-weight: italic;
+  font-style: normal;
+  src: url("../fonts/GothamBookItalic/GothamBookItalic.eot");
+  src: local("GothamBookItalic"), url("../fonts/GothamBookItalic/GothamBookItalic.woff2") format("woff2"), url("../fonts/GothamBookItalic/GothamBookItalic.woff") format("woff"), url("../fonts/GothamBookItalic/GothamBookItalic.ttf") format("truetype"), url("../fonts/GothamBookItalic/GothamBookItalic.svg#GothamBookItalic") format("svg");
+}
+@font-face {
+  font-family: "GothamMedium";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/GothamMedium/GothamMedium.eot");
+  src: local("GothamMedium"), url("../fonts/GothamMedium/GothamMedium.woff2") format("woff2"), url("../fonts/GothamMedium/GothamMedium.woff") format("woff"), url("../fonts/GothamMedium/GothamMedium.ttf") format("truetype"), url("../fonts/GothamMedium/GothamMedium.svg#GothamMedium") format("svg");
+}
+@font-face {
+  font-family: "GothamLight";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/GothamLight/GothamLight.eot");
+  src: local("GothamLight"), url("../fonts/GothamLight/GothamLight.woff2") format("woff2"), url("../fonts/GothamLight/GothamLight.woff") format("woff"), url("../fonts/GothamLight/GothamLight.ttf") format("truetype"), url("../fonts/GothamLight/GothamLight.svg#GothamLight") format("svg");
+}
+@font-face {
+  font-family: "MyriadPro-Semibold";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/MyriadPro-Semibold/MyriadPro-Semibold.eot");
+  src: local("MyriadPro-Semibold"), url("../fonts/MyriadPro-Semibold/MyriadPro-Semibold.woff2") format("woff2"), url("../fonts/MyriadPro-Semibold/MyriadPro-Semibold.woff") format("woff"), url("../fonts/MyriadPro-Semibold/MyriadPro-Semibold.ttf") format("truetype"), url("../fonts/MyriadPro-Semibold/MyriadPro-Semibold.svg#MyriadPro-Semibold") format("svg");
+}
+/*GENERAL STYLES START */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  max-width: 1920px;
+  min-width: 320px;
+  margin: 0 auto;
+  font: 16px "GothamMedium", sans-serif;
+  position: relative;
+  line-height: 1.4;
+  overflow-x: hidden;
+  opacity: 1;
+  background-color: #fff;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.mytitle {
+  font: 1.75em "GothamBold", "GothamMedium", sans-serif;
+  text-align: center;
+}
+
+.btn {
+  padding: 11px 45px;
+  background-color: #24c25c;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+.btn:hover {
+  background-color: #1c9748;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.btn:active {
+  -webkit-transform: translate(1px, 1px);
+          transform: translate(1px, 1px);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+/*GENERAL STYLES END */
+.header {
+  position: relative;
+  min-height: 515px;
+  padding: 20px 0 10px;
+  background: #f8d064 url("../img/bg/main-page/bg1-md.jpg") no-repeat;
+  background-size: auto 515px;
+  background-position: 90% 100%;
+}
+
+.logo-wrap {
+  max-width: 105px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.page-heading {
+  margin-top: 1em;
+  text-align: center;
+  color: #212121;
+  font: 1.875rem/1.2 "GothamBlack", "GothamBold", "GothamMedium", sans-serif;
+}
+
+.achiev-icons {
+  width: 133px;
+  height: 78px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
