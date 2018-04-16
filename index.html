@@ -29,36 +29,45 @@
 
 			<header class="header">
 				<div class="container">
-					<div class="top-line">
-						<div class="logo-wrap">
-							<img src="img/logo.svg" alt="Logo">
+					<div class="row">
+						<div class="col-12">
+							<div class="top-line">
+								<div class="logo-wrap">
+									<img src="img/logo.svg" alt="Logo">
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="bottom-line">
-						<h1 class="page-heading">Get access to endless world of the Internet.</h1>
+					<div class="row">
+						<div class="col-12 col-md-8">
+							<div class="bottom-line">
+								<h1 class="page-heading">Get access to endless world of the Internet.</h1>
+							</div>
+							<div class="btn-wrap mt-4 text-center text-md-left">
+								<button class="btn">get vpn now</button>
+							</div>
+						</div>
 					</div>
-					<div class="btn-wrap mt-4 text-center">
-						<button class="btn">get vpn now</button>
+					<div class="achiev-icons">
+						<img src="img/achiev-icons.png" alt="Tom's guide & PCMAG.com">
 					</div>
-				</div>
-				<div class="achiev-icons">
-					<img src="img/achiev-icons.png" alt="Tom's guide & PCMAG.com">
 				</div>
 			</header>
 
 
-			<section class="steps">
+			<div class="steps">
 				<div class="container">
 					<div class="step-wrapper">
-						<div class="step step1 pb-5">
+						<div class="step step1 pb-4">
 							<div class="row">
-								<div class="col-12 d-flex justify-content-center">
-									<h2 class="section-title step-title">Choose best to yourself</h2>
+								<div class="col-12">
+									<div class="section-title step-title" data-toggle="collapse" data-target="#tarrifs-collapse" aria-controls="tarrifs-collapse" aria-expanded="true" role="button">Choose best<br> to yourself</div>
 								</div>
 								<div class="col-12">
-									<div class="tarrifs">	
+									<div class="collapse show" id="tarrifs-collapse">
+										<div class="tarrifs">	
 
-											<div class="tarrifs-item recommend order-md-2">
+											<div class="tarrifs-item recommend">
 												<p class="tarrifs-description">1 - year plan</p>
 												<p class="tarrifs-discount">save 15%</p>
 												<p class="tarrifs-price-old">$5.82</p>
@@ -68,16 +77,17 @@
 												<p class="tarrifs-guarantee">7 - days money back guarantee</p>
 											</div>
 
-										<div class="tarrifs-item order-md-3">
+										<div class="tarrifs-item">
 												<p class="tarrifs-description">6 - month plan</p>
 												<p class="tarrifs-discount">save 10%</p>
+												<p class="tarrifs-price-old">$5.82</p>
 												<p class="tarrifs-price"><span class="symbol">$</span>6.99<span class="period">/m</span></p>
 												<p class="tarrifs-info">$99.90 Billed every 6 months</p>
 												<button class="btn tarrifs-purchase">get 6 months plan</button>
 												<p class="tarrifs-guarantee">7 - days money back guarantee</p>
 											</div>
 
-											<div class="tarrifs-item order-md-1">
+											<div class="tarrifs-item">
 												<p class="tarrifs-description">1 - months plan</p>
 												<p class="tarrifs-discount">save 0%</p>
 												<p class="tarrifs-price"><span class="symbol">$</span>7.99<span class="period">/m</span></p>
@@ -87,34 +97,35 @@
 											</div>
 
 										</div>
+									</div>
 								</div>
 							</div>
 						</div> <!-- /.step1 -->
 
 						<div class="step step2 pb-4">
 							<div class="row">
-								<div class="col-12 d-flex justify-content-center">
-									<h2 class="section-title step-title">Enter account information</h2>
+								<div class="col-12">
+									<div class="section-title step-title" data-toggle="collapse" data-target="#login-collapse" aria-controls="login-collapse" aria-expanded="false" role="button">Enter account<br> information</div>
 								</div>
 								<div class="col-12">
-									<div class="step-info">Already signed up? <a href="#">Sign in now</a></div>
-								</div>
-								<div class="col-12">
-									<form action="#">
-										<div class="form-line">
-											<input type="email" name="Email" class="form-control" autocomplete="off" placeholder="Your email" required>
-										</div>
-										<div class="form-line">
-											<input type="password" name="Password" class="form-control" id="password" autocomplete="off" placeholder="Password" required>
-										</div>
-										<div class="form-line">
-											<input type="password" name="Password Confirm" class="form-control" id="password-confirm" autocomplete="off" placeholder="Confirm password" required>
-											<div class="error">Passwords do not match</div>
-										</div>
-										<div id="emailHelp" class="form-text">We are committed to keeping your information confidential, and will use it solely to provide you with content and login information related to NOVAVPN.
-											<button class="btn form-text-btn">confirm</button>
-										</div>
-									</form>
+									<div class="collapse" id="login-collapse">
+										<div class="step-info">Already signed up? <a href="#">Sign in now</a></div>
+										<form action="#">
+											<div class="row align-items-xl-end">
+												<div class="col-12 col-md-9 col-lg-7 col-xl-6">
+													<input type="email" name="Email" class="form-control" autocomplete="off" placeholder="Your email" required>
+													<input type="password" name="Password" class="form-control" id="password" autocomplete="off" placeholder="Password" required>
+													<input type="password" name="Password Confirm" class="form-control" id="password-confirm" autocomplete="off" placeholder="Confirm password" required>
+													<div class="error">Passwords do not match</div>
+												</div>
+												<div class="col-12 col-md-9 col-lg-7 col-xl-6">
+													<div class="form-text">We are committed to keeping your information confidential, and will use it solely to provide you with content and login information related to NOVAVPN.
+														<button class="btn form-text-btn">confirm</button>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
 								</div>
 							</div>
 						</div> <!-- /.step2 -->
@@ -122,22 +133,22 @@
 
 					<div class="step step3">
 						<div class="row">
-							<div class="col-12 d-flex justify-content-center">
-								<h2 class="section-title step-title">Choose billing method</h2>
+							<div class="col-12">
+								<div class="section-title step-title" data-toggle="collapse" data-target="#step-accordion" aria-controls="step-accordion" aria-expanded="false" role="button">Choose billing<br> method</div>
 							</div>
 							<div class="col-12">
-								<div class="step-accordion" id="step-accordion">
+								<div class="step-accordion collapse" id="step-accordion">
 									<div class="card">
 											<div class="card-header" id="headingOne">
 												<button class="step-accordion-btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 														<span class="step-accordion-btn-text">Credit Card</span>
-														<img src="img/steps-payment-logos/visa.png" alt="visa">
-														<img src="img/steps-payment-logos/mastercard.png" alt="mastercard">
-														<img src="img/steps-payment-logos/americanexpress.png" alt="americanexpress">
-														<img src="img/steps-payment-logos/jch.png" alt="jch">
-														<img src="img/steps-payment-logos/maestro.png" alt="maestro">
-														<img src="img/steps-payment-logos/visae.png" alt="visa electron">
-														<img src="img/steps-payment-logos/dc.png" alt="diners club">
+														<img src="img/steps-payment-logos/visa.png" alt="visa" class="d-md-inline-block">
+														<img src="img/steps-payment-logos/mastercard.png" alt="mastercard" class="d-md-inline-block">
+														<img src="img/steps-payment-logos/americanexpress.png" alt="americanexpress" class="d-md-inline-block">
+														<img src="img/steps-payment-logos/jch.png" alt="jch" class="d-md-inline-block">
+														<img src="img/steps-payment-logos/maestro.png" alt="maestro" class="d-lg-inline-block">
+														<img src="img/steps-payment-logos/visae.png" alt="visa electron" class="d-lg-inline-block">
+														<img src="img/steps-payment-logos/dc.png" alt="diners club" class="d-lg-inline-block">
 												</button>
 											</div>
 						
@@ -191,7 +202,7 @@
 											<div class="card-header" id="headingTwo">
 												<button class="step-accordion-btn" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
 														<span class="step-accordion-btn-text">Bitcoin</span>
-														<img src="img/steps-payment-logos/btc.png" alt="bitcoin">
+														<img src="img/steps-payment-logos/btc.png" alt="bitcoin" class="d-md-inline-block">
 												</button>
 											</div>
 						
@@ -245,10 +256,10 @@
 											<div class="card-header" id="headingThree">
 												<button class="step-accordion-btn" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
 														<span class="step-accordion-btn-text">Other</span>
-														<img src="img/steps-payment-logos/wp.png" alt="worldpay">
-														<img src="img/steps-payment-logos/sage.png" alt="sage">
-														<img src="img/steps-payment-logos/skrill.png" alt="skrill">
-														<img src="img/steps-payment-logos/cirrus.png" alt="cirrus">
+														<img src="img/steps-payment-logos/wp.png" alt="worldpay" class="d-md-inline-block">
+														<img src="img/steps-payment-logos/sage.png" alt="sage" class="d-md-inline-block">
+														<img src="img/steps-payment-logos/skrill.png" alt="skrill" class="d-md-inline-block">
+														<img src="img/steps-payment-logos/cirrus.png" alt="cirrus" class="d-md-inline-block">
 												</button>
 											</div>
 						
@@ -304,20 +315,20 @@
 					</div>
 					
 				</div> <!-- /.container -->
-			</section>
+			</div>
 
 
 			<section class="howTo">
 				<div class="container">
 					<div class="row align-items-md-center">
-						<div class="col-12 col-md-9 col-xl-6">
+						<div class="col-12">
 							<h2 class="howTo-title">How to download the app?</h2>
 							<p class="howTo-text d-none d-md-block">Just download the appfrom store.<br> Simple, nice and user-friendly application of vpn.</p>
 						</div>
-						<div class="col-12 col-md-3 col-xl-6 mt-4">
+						<div class="col-12">
 							<div class="row no-gutters">
-								<div class="col-12 col-md-12 col-xl-auto"><a href="#" class="howTo-link howTo-link-appStore"></a></div>
-								<div class="col-12 col-md-12 col-xl-auto"><a href="#" class="howTo-link howTo-link-googlePlay"></a></div>
+								<div class="col-12 col-md-6"><a href="#" class="howTo-link howTo-link-appStore"></a></div>
+								<div class="col-12 col-md-6"><a href="#" class="howTo-link howTo-link-googlePlay"></a></div>
 							</div>
 						</div>
 					</div>
@@ -332,7 +343,7 @@
 						<div class="col-12">
 							<h2 class="advantages-title">What Makes NOVAVPN the Best?</h2>
 						</div>
-						<div class="col-12">
+						<div class="col-12 d-md-flex justify-content-md-center">
 							<ul class="advantages-list">
 								<li class="advantages-list-item">Unlimited data usage</li>
 								<li class="advantages-list-item">Simple, fast download</li>
@@ -477,8 +488,8 @@
 						<div class="col-12">
 							<div class="get-links">
 								<div class="row no-gutters">
-									<div class="col-12"><a href="#" class="get-link get-link-appStore"></a></div>
-									<div class="col-12"><a href="#" class="get-link get-link-googlePlay"></a></div>
+									<div class="col-12 col-md-6"><a href="#" class="get-link get-link-appStore"></a></div>
+									<div class="col-12 col-md-6"><a href="#" class="get-link get-link-googlePlay"></a></div>
 								</div>
 							</div>
 						</div>
@@ -532,16 +543,16 @@
 						<div class="col-12 col-xl-4">
 							<div class="footer-info">
 								<div class="row align-items-md-center">
-									<div class="col-12 col-md-5 col-xl-12 order-md-2 order-xl-1">
-										<div class="footer-payment-logos d-flex justify-content-between align-items-center">
+									<div class="col-12">
+										<div class="footer-payment-logos d-flex justify-content-between justify-content-xl-end align-items-center">
 											<img src="img/footer-payment-logos/visa.png" alt="visa">
 											<img src="img/footer-payment-logos/mastercard.png" alt="mastercard">
 											<img src="img/footer-payment-logos/maestro.png" alt="maestro">
 											<img src="img/footer-payment-logos/paypal.png" alt="paypal">
 										</div>
 									</div>
-									<div class="col-12 col-md-7 col-xl-12 order-md-1 order-xl-2 d-md-flex text-center">
-										<div class="footer-copy">Copyright  2017  NOVAVPN.com</div>
+									<div class="col-12 d-md-flex justify-content-md-center text-center">
+										<div class="footer-copy mr-md-2">Copyright  2017  NOVAVPN.com</div>
 										<div class="footer-support"><a href="mailto:support@novavpn.com">support@novavpn.com</a></div>
 									</div>
 								</div>

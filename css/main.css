@@ -190,6 +190,7 @@ ul {
 }
 .step-title {
   position: relative;
+  cursor: pointer;
 }
 .step-title::before {
   content: "";
@@ -212,14 +213,13 @@ ul {
   position: absolute;
   left: -43px;
   top: 4px;
-  font-size: 20px;
+  font: 20px "GothamMedium", sans-serif;
   color: #d9d9d9;
 }
 .step-info {
   margin: 0.5rem 0 0.85rem;
   font-family: "GothamLight", "GothamMedium", sans-serif;
   color: #383c43;
-  text-align: center;
 }
 .step-info a {
   color: #005cfe;
@@ -235,9 +235,8 @@ ul {
 }
 .step-accordion .card-header {
   position: relative;
-  padding: 0.3rem 0;
+  padding: 0;
   background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.125);
 }
 .step-accordion .card-header::before {
   content: "";
@@ -260,8 +259,9 @@ ul {
 }
 .step-accordion-btn {
   width: 100%;
-  padding: 20px 20px 20px 50px;
-  border: none;
+  margin-bottom: -1px;
+  padding: 25px 20px 25px 50px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
   outline: none;
   background-color: transparent;
   text-align: left;
@@ -271,14 +271,22 @@ ul {
   letter-spacing: 1px;
   cursor: pointer;
 }
+.step-accordion-btn:focus {
+  outline: 2px solid #f7c04f;
+  border: none;
+}
 .step-accordion-btn img {
   display: none;
+  margin-left: 18px;
 }
 
 .step2-sign {
   font-family: "GothamLight", "GothamMedium", sans-serif;
   color: #383c43;
   text-align: center;
+}
+.step2 input {
+  margin: 20px 0 10px;
 }
 
 .step3 label {
@@ -344,6 +352,9 @@ ul {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
+.tarrifs-item.recommend .tarrifs-price-old, .tarrifs-item:hover .tarrifs-price-old {
+  display: block;
+}
 .tarrifs-item.recommend .tarrifs-info, .tarrifs-item:hover .tarrifs-info {
   color: #202020;
   -webkit-transition: all 0.2s;
@@ -379,9 +390,23 @@ ul {
   transition: all 0.2s;
 }
 .tarrifs-price-old {
+  display: none;
   margin: 10px 0 0;
   font-family: "GothamLight", "GothamMedium", sans-serif;
   color: #b6b5b5;
+  position: relative;
+}
+.tarrifs-price-old::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: block;
+  width: 3.5em;
+  height: 1px;
+  background-color: rgba(182, 181, 181, 0.8);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .tarrifs-price {
   margin: 0;
@@ -448,7 +473,7 @@ ul {
 
 .step-form-btn {
   width: 220px;
-  margin-top: 5px;
+  margin-top: 10px;
   padding: 9px 45px;
   background-color: #01356b;
   text-transform: uppercase;
@@ -671,4 +696,262 @@ ul {
 }
 .footer-support a:hover {
   color: #8abcf1;
+}
+
+.thanks-page .header {
+  background-position: 45% 100%;
+}
+
+@media only screen and (min-width: 400px) {
+  .step {
+    padding-left: 65px;
+  }
+
+  .step-wrapper::before {
+    left: 35px;
+  }
+
+  .step-title::before {
+    left: -41px;
+  }
+
+  .step-title::after {
+    left: -56px;
+  }
+
+  /* */
+}
+@media only screen and (min-width: 480px) {
+  .step-title br {
+    display: none;
+  }
+
+  .tarrifs-item {
+    max-width: 305px;
+    margin: 0 0 20px 15px;
+  }
+
+  .tarrifs-item.recommend, .tarrifs-item:hover {
+    max-width: 335px;
+  }
+
+  /* */
+}
+@media only screen and (min-width: 576px) {
+  .header {
+    background-size: 100% 515px;
+    background-position: 0 0;
+  }
+
+  /* */
+}
+@media only screen and (min-width: 768px) {
+  .header {
+    background: url("../img/bg/main-page/bg1-lg.jpg") no-repeat 65% 0;
+  }
+
+  .logo-wrap {
+    margin-left: 0;
+  }
+
+  .page-heading {
+    margin-top: 1.9em;
+    font-size: 2.375rem;
+    text-align: left;
+  }
+
+  .achiev-icons {
+    right: auto;
+    left: 30px;
+    bottom: 30px;
+  }
+
+  .step-wrapper::before {
+    left: 81px;
+  }
+
+  .step {
+    padding-left: 120px;
+  }
+
+  .step-title::before {
+    left: -50px;
+  }
+
+  .step-title::after {
+    left: -120px;
+    width: auto;
+    content: "step " counter(step);
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+
+  .step-accordion-btn-text {
+    width: 130px;
+    display: inline-block;
+  }
+
+  .howTo {
+    background: url("../img/bg/main-page/bg2-lg.jpg") no-repeat 75% 50%;
+  }
+
+  .weHave {
+    padding: 3rem 0;
+  }
+  .weHave-title br {
+    display: none;
+  }
+  .weHave-text {
+    margin: 2rem 15% 1rem;
+  }
+
+  .trusted {
+    padding: 3.125rem 0;
+  }
+  .trusted img {
+    margin: 15px 17px;
+  }
+
+  .sponsored {
+    padding: 3.125rem 0;
+  }
+  .sponsored img {
+    margin: 15px 10px;
+  }
+
+  .footer-list-title {
+    text-decoration: none;
+    padding: 0.1rem 0;
+  }
+
+  .get-link-appStore, .howTo-link-appStore {
+    margin-left: auto;
+    margin-right: 10px;
+  }
+
+  .get-link-googlePlay, .howTo-link-googlePlay {
+    margin-right: auto;
+    margin-left: 10px;
+  }
+
+  .thanks-page {
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #262527;
+  }
+
+  .thanks-page .header {
+    background-position: 65% 0;
+  }
+
+  /* */
+}
+@media only screen and (min-width: 1200px) {
+  .achiev-icons {
+    width: 1140px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+
+  .page-heading {
+    margin-top: 2.5em;
+    font-size: 3rem;
+  }
+
+  .tarrifs {
+    min-height: 320px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .tarrifs-item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 305px;
+            flex: 0 0 305px;
+    margin: 0 10px;
+  }
+
+  .tarrifs-item.recommend, .tarrifs-item:hover {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 335px;
+            flex: 0 0 335px;
+    margin: 0 10px;
+  }
+
+  .advantages-title {
+    padding: 0;
+    text-align: left;
+  }
+  .advantages-list {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .advantages-list-item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .weHave-text {
+    margin: 2rem 25% 1rem;
+  }
+
+  .trusted {
+    padding: 5rem 0 2rem;
+  }
+
+  .description {
+    padding: 2rem 0 4rem;
+  }
+
+  .footer-payment-logos img {
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  .howTo-link, .get-link {
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+  }
+  .howTo-link:active, .get-link:active {
+    -webkit-transform: translate(1px, 1px);
+            transform: translate(1px, 1px);
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+  }
+
+  /* */
+}
+@media only screen and (min-width: 1400px) {
+  .header, .howTo, .weHave {
+    background-size: cover;
+  }
+
+  /* */
 }
