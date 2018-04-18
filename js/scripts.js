@@ -66,6 +66,8 @@ $(function() {
 
 	$('.tarrifs-item').click(function() {
 		$('#login-collapse').collapse();
+		var top = $('#login-collapse').offset().top;
+		$('body,html').animate({scrollTop: top-100}, 1000);
 	});
 
 	$("#login-form").validate({

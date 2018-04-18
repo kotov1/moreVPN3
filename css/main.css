@@ -195,7 +195,7 @@ ul {
   font-size: 12px;
 }
 .steps .error + .error {
-  font-family: "GothamLight", "GothamMedium", sans-serif;
+  font: 14px "GothamLight", "GothamMedium", sans-serif;
   color: #ff3d4c;
 }
 
